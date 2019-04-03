@@ -1,0 +1,16 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+
+# internal interfaces
+/internal_interfaces
+
+# dependencies
+/node_modules
+
+# logs
+*.log
+
+# package-lock
+package-lock.json

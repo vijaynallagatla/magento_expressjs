@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle version="4.3">
+<file name="route.ts">
+</file>
+<file name="service.controller.ts">
+</file>
+<file name="service.controller.ts">
+</file>
+<file name="service.controller.ts">
+</file>
+<file name="service.ts">
+<error line="21" column="31" severity="error" message="missing whitespace" source="one-line"/>
+<error line="24" column="36" severity="error" message="missing whitespace" source="one-line"/>
+</file>
+<file name="service.ts">
+</file>
+<file name="ts">
+</file>
+<file name="ts">
+</file>
+<file name="ts">
+</file>
+<file name="ts">
+</file>
+<file name="ts">
+</file>
+<file name="ts">
+</file>
+<file name="ts">
+</file>
+<file name="ts">
+</file>
+</checkstyle>

@@ -1,0 +1,74 @@
+{
+  "name": "magento_api",
+  "version": "1.0.0",
+  "description": "REST Client for Consuming Magento Service",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "set mode=production&& gulp && node dist/index.js",
+    "test:lint": "tslint -c tslint.json test/**/*.ts",
+    "test:unit": " set mode=testing&& mocha --colors  --reporter  mocha-jenkins-reporter  --compilers ts:ts-node/register test/unit/**/*.test.ts",
+    "test:coverage": "nyc npm run test:unit"
+  },
+  "author": "Vijay Kumar N",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^0.0.34",
+    "@types/chai": "^4.0.1",
+    "@types/chai-http": "0.0.30",
+    "@types/express": "^4.0.35",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.10.5",
+    "@types/supertest": "^2.0.1",
+    "@types/ws": "latest",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "cors": "^2.8.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-tslint": "^7.0.1",
+    "gulp-tslint-jenkins-reporter": "latest",
+    "gulp-typescript": "^3.1.7",
+    "jsonwebtoken": "^8.1.0",
+    "mocha": "^3.2.0",
+    "mocha-jenkins-reporter": "0.3.8",
+    "moment": "^2.18.1",
+    "moq.ts": "^1.0.0",
+    "nyc": "^10.1.2",
+    "request": "^2.81.0",
+    "supertest": "^3.0.0",
+    "swagger-jsdoc": "^1.9.7",
+    "swagger-ui-express": "^2.0.7",
+    "ts-node": "latest",
+    "tslint": "^5.8.0",
+    "typescript": "^2.3.4",
+    "typescript.list": "^6.7.0",
+    "typings": "^1.0.5",
+    "url": "latest"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "es6-shim": "^0.35.3",
+    "express": "~4.13.1",
+    "path": "^0.12.7",
+    "promise": "^8.0.3",
+    "request": "^2.83.0",
+    "systemjs": "^0.20.14",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.4.6",
+    "ws": "^2.2.1"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "test/unit/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "json",
+      "html"
+    ],
+    "all": true
+  }
+}
